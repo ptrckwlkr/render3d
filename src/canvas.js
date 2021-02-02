@@ -1,7 +1,7 @@
 export default class Canvas {
     constructor(id) {
-        this.width = process.env.VIEWPORT_WIDTH
-        this.height = process.env.VIEWPORT_HEIGHT
+        this.width = parseInt(process.env.VIEWPORT_WIDTH)
+        this.height = parseInt(process.env.VIEWPORT_HEIGHT)
 
         // The DOM canvas element
         this._canvas = document.getElementById(id)
